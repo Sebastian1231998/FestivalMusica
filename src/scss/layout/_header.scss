@@ -1,0 +1,54 @@
+// header flex
+.header {
+
+background-color: $verde;
+padding: 2rem;
+
+.contenedor-header h1{
+ text-align: center;
+ margin-bottom: 1rem;
+}
+
+@include tablet{
+    .contenedor-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ 
+}
+
+nav.navegacion{
+    text-align: center;
+}
+ h1{
+ font-size: 3rem;
+ color: $blanco;
+ font-weight: bold;
+
+}
+
+&.fijo{
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 .3rem .4rem #4444;
+}
+
+
+
+}
+
+nav.navegacion a{
+    color: $blanco;
+    margin: .5rem;
+    font-size: 1.9rem;
+    font-weight: $regular;
+
+
+    &:hover{
+        color: $amarillo;
+    }
+ }
+
+
+

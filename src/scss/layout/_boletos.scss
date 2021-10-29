@@ -1,0 +1,72 @@
+.contenido-boletos{
+     background-color: $verde;
+
+     .flex-boletos{
+         display: flex;
+         justify-content: space-between;
+         
+     }
+     h2{
+        text-align: center;
+        color: $blanco;
+        padding: 3rem;;
+        font-size: 2.8rem;
+    }
+
+     .tabla-1, .tabla-2{
+         width: 100%;
+         text-indent: unset;
+        
+     }
+
+     
+     .tabla-1 p , .tabla-2 p{
+         text-align: center;
+         color: $blanco;
+        
+     }
+
+     table{
+         width: 100%;
+         padding: 2rem;
+         border-spacing:0;
+        text-indent: unset;
+
+         
+     }
+     thead tr{
+         background-color: $rosa;
+        
+         th{
+             padding: 1rem;
+             color: $blanco;
+             font-weight: $delgada;
+             text-transform: uppercase;
+         }
+     }
+
+      tbody tr{
+        background-color: $blanco;
+        
+        td{
+            padding: 1rem;
+            margin: 0 1rem 0 0;
+            border-bottom: 1px solid #e1e1e1;
+
+            
+        }
+      }
+
+      tfoot tr{
+        background-color: $morado;
+        td{
+            padding: 1rem;
+            margin: 0 1rem 0 0;
+            text-align: center;
+            color: $blanco;
+            font-size: 2rem;
+        }
+      }
+
+     
+}

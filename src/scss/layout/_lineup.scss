@@ -1,0 +1,97 @@
+.line-up{
+
+    background-color: $rosa;
+
+  
+        h2{
+            text-align: center;
+            color: $blanco;
+            padding: 3rem;;
+            font-size: 2.8rem;
+        }
+   
+    p{
+        color: $blanco;
+        text-align: center;
+        padding: 3rem 0;
+        font-weight: $delgada;
+    }
+    .nombre-escenario{
+        color: $blanco;
+        text-align: center;
+        padding: 3rem 0 0 0;
+        font-weight: $delgada;
+        color: $negro;
+        &:after{
+            content: '';
+            width: 20rem;
+            height: 10rem;
+            display: block;
+            margin: 3rem auto 0 auto;
+            background-size: 10rem;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+        }
+    }
+    .contenedor-lista{
+          @include tablet{
+            @include grid(2,5rem)
+          }
+          padding: 5rem;
+    }
+  
+    
+}
+.escenario{
+
+    ul{
+        padding: 0;
+        list-style: none;
+    }
+
+    ul li{
+        padding: 2rem;
+        span{
+            font-weight: $black;
+        }
+    
+
+        
+    }
+    .darken-amarillo li:nth-child(odd){
+        background-color: darken($amarillo, 10);
+    }
+    .darken-verde li:nth-child(odd){
+        background-color: darken($verde, 10);
+    }
+
+
+
+}
+
+.edm .nombre-escenario{
+    &:after{
+      content: '';
+      background-image: url(../img/icono_edm.png);
+      font-size: 3rem;
+    }
+
+}
+.rock .nombre-escenario{
+    &:after{
+      content: '';
+      background-image: url(../img/icono_rock.png);
+      font-size: 3rem;
+    }
+
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+.festival{
+   
+    @include tablet{
+        @include grid(2,2rem);
+    }
+    .contenido-imagen-festival{
+        text-align: center;
+        padding: 2rem;
+        img{
+            max-width: 100%;
+        }
+    }
+
+
+}
+
+.contenido-festival{
+    display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    h2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2.5rem;
+        font-weight: $bold;
+        
+      span{
+        margin-top: 3rem;
+        color: $rosa;
+        font-size: 2rem;
+        font-weight: $bold;
+
+      }
+    }
+    
+}
